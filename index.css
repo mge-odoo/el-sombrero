@@ -1,0 +1,256 @@
+/*  Typo
+----------------------------------------------- */
+
+h1 { font:bold 18px/140% "Trebuchet MS", Verdana, sans-serif; }
+h2 { font:bold 14px/140% "Trebuchet MS", Verdana, sans-serif; }
+
+p {	font: 11px/140% Verdana, Geneva, Arial, Helvetica, sans-serif;}
+
+/*  Layout
+----------------------------------------------- */
+
+body {
+    padding:35px 0 0 0;
+    margin:0;
+    font: 11px/140% Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+
+#header
+{
+    width: 100%;
+}
+
+#header img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header h1,
+#header a
+{
+    padding:0;
+    font-family:"Helvetica","Lucida Sans Unicode",Tahoma,Verdana,Arial,Helvetica,sans-serif;
+    font-size:30px;
+    font-weight:normal;
+    text-decoration:none;
+    line-height:1.3em;
+    text-align:right;
+}
+
+#header a:hover { text-decoration:none;  }
+
+#sidebar
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:50px;
+}
+
+#sidebar img
+{
+    width:680px; /* you can use % */
+    height: 480px;
+}
+}
+
+#content
+{
+    padding-top: 50px;
+
+}
+
+#footer
+{
+    clear:both;
+    margin-top:10px;
+    background:url(footer-bg.gif) repeat-x top;
+    height:65px;
+}
+
+#footer .gutter 
+{
+    height:30px;
+    padding:35px 15px 0 90px;
+}
+
+/*  Navigation
+----------------------------------------------- */
+
+.btn-contact
+{
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    border: none;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.btn-contact:hover{
+    background-color:red;
+}
+
+.navigation
+{
+    z-index:1000;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height:50px;
+    background-color:white;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    list-style-type:none;
+    text-align:center; 
+}
+
+.navigation li {
+    display: inline;
+
+}
+
+.navigation li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: red;
+}
+
+.navigation li a.highlight {
+    background-color: red;
+}
+
+/*   Sections
+-------------------------*/
+
+section.primary {
+	margin-top: 100px;
+	margin-bottom: 32px;
+}
+
+/* menu
+************************/
+.image-container {
+	height: 500px;
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+.image-container img{
+	max-height:300px;
+}
+
+.im_ingredient_small {
+	height: 100px;
+	width: 100px;
+}
+
+.ingredient-bottom-right {
+    border-bottom: 1px dashed black;
+    border-right: 1px dashed black;
+}
+.ingredient-bottom {
+    border-bottom: 1px dashed black;
+}
+.ingredient-right {
+    border-right: 1px dashed black;
+}
+
+.ingredient-grid {
+    vertical-align: middle;
+    height: 104px;
+    width: 104px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.im_ingredient_big {
+	/*height: 100%;*/
+	width: 100%;
+	padding: 0;
+}
+
+.invisible {
+	/*display: none;*/
+}
+
+/* nourriture-saine
+**************************/
+.center-container {
+	height:100%;
+	display: table;
+	width:100%;
+	margin:0;
+}
+
+.center-row {
+	height:50%;
+	width:100%;
+	display: table-row;
+	text-align: center;
+}
+  
+.center-row > div {
+	height:100%;
+	width:50%;
+	padding:0;
+	display: table-cell;
+	vertical-align:middle;
+}
+.center-row img {
+	height: auto;
+	width: 100%;
+	margin:auto;
+	display: table-cell;
+	vertical-align:middle;
+}
+
+.center-row .caption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	width: 100%;
+	height:100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.center-row p {
+	font-size: 1.5em;
+}
+
+.center-row div:hover .caption {
+	opacity: 0.6;
+}
+
+.carousel-inner{
+  width:100%;
+  max-height: 400px !important;
+}
