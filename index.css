@@ -135,12 +135,8 @@ body {
     text-decoration: none;
 }
 
-.navigation li a:hover {
-    background-color: red;
-}
-
-.navigation li a.highlight {
-    background-color: red;
+.navigation li a:hover, .navigation li a.highlight {
+    color: red;
 }
 
 /*   Sections

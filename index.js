@@ -48,7 +48,7 @@ $(document).keypress(function(e) {
                 // Menu highlighting
                 var menu = $('#menu').offset().top;
                 var nourriture_saine = $('#nourriture_saine').offset().top;
-                var horaires = $('#s_horaires').offset().top - 10;
+                var horaires = $('#horaires').offset().top;
 
                 // var current_section = 's_welcome';
 
