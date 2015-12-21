@@ -110,6 +110,9 @@ body {
     width: 100%;
     line-height:50px;
     background-color:white;
+
+    border: 2px;
+    border-bottom-style: solid;
 }
 
 .navigation ul{

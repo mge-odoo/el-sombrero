@@ -50,16 +50,14 @@ $(document).keypress(function(e) {
                 var nourriture_saine = $('#nourriture_saine').offset().top;
                 var horaires = $('#horaires').offset().top;
 
-                // var current_section = 's_welcome';
-
                 $(window).on('scroll', function() {
                     var y_scroll_pos = window.pageYOffset;
                     if (y_scroll_pos >= 0 && y_scroll_pos < menu) {
-                        highlight_menu($('.navigation a')[0]);
+                        highlight_menu($('.navigation a')[2]);
                     } else if (y_scroll_pos >= menu && y_scroll_pos < nourriture_saine) {
-                        highlight_menu($('.navigation a')[1]);
+                        highlight_menu($('.navigation a')[0]);
                     } else if (y_scroll_pos >= nourriture_saine && y_scroll_pos < horaires) {
-                         highlight_menu($('.navigation a')[2]);
+                         highlight_menu($('.navigation a')[1]);
                     } else if (y_scroll_pos > horaires) {
                          highlight_menu($('.navigation a')[3]);
                     }
