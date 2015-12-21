@@ -269,3 +269,7 @@ section.primary {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+#s_bottom .social_media img {
+    width: 30px;
+}
