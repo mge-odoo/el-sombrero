@@ -6,85 +6,37 @@
 h1 { font:bold 18px/140% "Trebuchet MS", Verdana, sans-serif; }
 h2 { font:bold 14px/140% "Trebuchet MS", Verdana, sans-serif; }
 
-p {	font: 11px/140% Verdana, Geneva, Arial, Helvetica, sans-serif;}
+p {	font: 12px/140% Verdana, Geneva, Arial, Helvetica, sans-serif;}
 
-/*  Layout
------------------------------------------------ */
-
-body {
-    padding:35px 0 0 0;
-    margin:0;
-    font: 11px/140% Verdana, Geneva, Arial, Helvetica, sans-serif;
-}
-
-#container
-{
-    margin-left: auto;
-    margin-right: auto;
-    width:80%;
-}
-
-#header
-{
-    width: 100%;
-}
-
-#header img
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#header h1,
-#header a
-{
+html, body {
+    margin: 0;
+    font: 12px/140% Verdana, Geneva, Arial, Helvetica, sans-serif;
+    height:100%;
+    width:100%;
     padding:0;
-    font-family:"Helvetica","Lucida Sans Unicode",Tahoma,Verdana,Arial,Helvetica,sans-serif;
-    font-size:30px;
-    font-weight:normal;
-    text-decoration:none;
-    line-height:1.3em;
-    text-align:right;
 }
 
-#header a:hover { text-decoration:none;  }
+/*   Sections
+-------------------------*/
 
-#sidebar
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top:50px;
+section.primary {
+	padding-top : 81px;
 }
 
-#sidebar img
-{
-    width:680px; /* you can use % */
-    height: 480px;
-}
-}
-
-#content
-{
-    padding-top: 50px;
-
+section.screensized {
+    background: #CFF;
+    height:100%;
+    width:100%;
+    box-sizing:border-box;
 }
 
-#footer
-{
-    clear:both;
-    margin-top:10px;
-    background:url(footer-bg.gif) repeat-x top;
-    height:65px;
+section:nth-child(odd) {
+    background: lightgray;
 }
 
-#footer .gutter 
-{
-    height:30px;
-    padding:35px 15px 0 90px;
-}
-
+section:nth-child(even) {
+    background: gray;
+} 
 /*  Navigation
 ----------------------------------------------- */
 
@@ -100,7 +52,7 @@ body {
 }
 
 .btn-contact:hover{
-    background-color:red;
+    color:red;
 }
 
 .navigation
@@ -112,7 +64,6 @@ body {
     width: 100%;
     line-height:50px;
     background-color:white;
-
     border: 2px;
     border-bottom-style: solid;
 }
@@ -138,20 +89,16 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+	outline: 0;
 }
 
 .navigation li a:hover, .navigation li a.highlight {
     color: red;
 }
 
-/*   Sections
--------------------------*/
-
-section.primary {
-	margin-top: 150px;
-	margin-bottom: 32px;
+.nav_anchor {
+	top : -81px;
 }
-
 /* menu
 ************************/
 .image-container {
@@ -231,13 +178,12 @@ section.primary {
 }
 
 .thumbnail {
-    height: 200px;
     background-size: cover;
     position: relative;
     margin: 0;
     background-position: 50%;
     border: none;
-    padding: 5%;
+    padding: 15%;
 }
 
 .thumbnail .thumbnail-hover {
@@ -281,7 +227,7 @@ section.primary {
 /* bottom
 **************************/
 #s_bottom {
-    background-color: red;
+    /*background-color: red;*/
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -289,3 +235,75 @@ section.primary {
 #s_bottom .social_media img {
     width: 30px;
 }
+
+/* JIMDO Layout
+----------------------------------------------- */
+/*
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+
+#header
+{
+    width: 100%;
+}
+
+#header img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header h1,
+#header a
+{
+    padding:0;
+    font-family:"Helvetica","Lucida Sans Unicode",Tahoma,Verdana,Arial,Helvetica,sans-serif;
+    font-size:30px;
+    font-weight:normal;
+    text-decoration:none;
+    line-height:1.3em;
+    text-align:right;
+}
+
+#header a:hover { text-decoration:none;  }
+
+#sidebar
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:50px;
+}
+
+#sidebar img
+{
+    width:680px;
+    height: 480px;
+}
+}
+
+#content
+{
+    padding-top: 50px;
+
+}
+
+#footer
+{
+    clear:both;
+    margin-top:10px;
+    background:url(footer-bg.gif) repeat-x top;
+    height:65px;
+}
+
+#footer .gutter 
+{
+    height:30px;
+    padding:35px 15px 0 90px;
+}
+*/
