@@ -31,11 +31,11 @@ section.screensized {
 }
 
 section:nth-child(odd) {
-    background: lightgray;
+    background: gray;
 }
 
 section:nth-child(even) {
-    background: gray;
+    background: lightgray;
 } 
 /*  Navigation
 ----------------------------------------------- */
@@ -284,7 +284,6 @@ section:nth-child(even) {
 {
     width:680px;
     height: 480px;
-}
 }
 
 #content
