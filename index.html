@@ -19,8 +19,10 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <!-- Personnal scripts -->
-        <script src="index.js"></script>
-        <link rel="stylesheet" href="index.css">
+        <script src="js/index.js"></script>
+        <script src="js/animatescroll.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <link rel="stylesheet" href="css/index.css">
 		<link rel="icon" type="image/png" href="favicon.ico" />
         <title>Mex & Go Local</title>
     </head>
@@ -28,27 +30,32 @@
 <!-- NAVIGATION-->
 
 <div class="navigation">
-    <ul>
+    <ul id="nav">
         <!-- <li>
             <a href="#welcome" class="highlight smoothScroll">Home</a>
         </li> -->
 
-        <li>
-            <a href="#s_menu" class="smoothScroll">Menu</a>
-        </li>
 
         <li>
-            <a href="#s_n_saine" class="smoothScroll">Nourriture Saine</a>
-        </li>
-
-        <li>
-            <a href="index.html" class="highlight smoothScroll">
+            <a href="index.html">
                 <img width="50px" src="img/logo.jpeg"/>
             </a>
         </li>
 
         <li>
-            <a href="#s_horaires" class="smoothScroll">Horaires</a>
+            <a href="#s_menu" onclick="$('#s_menu').animatescroll();">Menu</a>
+        </li>
+
+        <li>
+            <a href="#s_n_saine" onclick="$('#s_n_saine').animatescroll();">Nourriture Saine</a>
+        </li>
+
+        <li>
+            <a href="#s_apropos" onclick="$('#s_apropos').animatescroll();">A propos de nous</a>
+        </li>
+
+        <li>
+            <a href="#s_infos" onclick="$('#s_infos').animatescroll();">Infos pratiques</a>
         </li>
 
         <li>
@@ -109,39 +116,18 @@
             <div class="item active">
                 <img src="img/welcome_2.jpg" alt="" />
                 <div class="carousel-caption">
-                    <h3>
-                        Première image
-                    </h3>
-
-                    <p>
-                        Jolie hein ?
-                    </p>
                 </div>
             </div>
 
             <div class="item">
                 <img src="img/welcome_2.jpg" alt="" />
                 <div class="carousel-caption">
-                    <h3>
-                        Deuxième image
-                    </h3>
-
-                    <p>
-                        Jolie hein ?
-                    </p>
                 </div>
             </div>
 
             <div class="item">
                 <img src="img/welcome_2.jpg" alt="" />
                 <div class="carousel-caption">
-                    <h3>
-                        Troisième image
-                    </h3>
-
-                    <p>
-                        Jolie hein ?
-                    </p>
                 </div>
             </div>
         </div>
@@ -237,69 +223,98 @@
         </div>
 	</div>
 </section>
+
 <!-- SECTION NOURRITURE SAINE -->
 <section id="s_n_saine" class="primary clearfix screensized">
     <!-- IMAGES 2X2 GRID -->
-	<h3 class="text-center">
-		---------- NOURRITURE SAINE ----------
-	</h3>
-	</br>
-	</br>
-    <div class="center-container">
-        <div class="center-row">
-            <div class="col-xs-6">
-                <div class="thumbnail" style="background-image: url(img/welcome_2.jpg);">
-                    <div class="thumbnail-hover text-center">
-                        <div>
-                            Super texte pour décrire cette image
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <h3 class="text-center">
+        ---------- NOURRITURE SAINE ----------
+    </h3>
+    </br>
+    </br>
+    <ul class="grid cs-style-3">
+        <li>
+            <figure>
+                <img src="img/welcome_2.jpg" alt="img04">
+                <figcaption>
+                    <h3>Title</h3>
+                    <span>Short description</span>
+                    <a href="#">More info</a>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="img/welcome_2.jpg" alt="img01">
+                <figcaption>
+                    <h3>Title</h3>
+                    <span>Short description</span>
+                    <a href="#">More info</a>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="img/welcome_2.jpg" alt="img02">
+                <figcaption>
+                    <h3>Title</h3>
+                    <span>Short description</span>
+                    <a href="#">More info</a>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="img/welcome_2.jpg" alt="img05">
+                <figcaption>
+                    <h3>Title</h3>
+                    <span>Short description</span>
+                    <a href="#">More info</a>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+    <script src="js/toucheffects.js"></script>
+</section>
 
-            <div class="col-xs-6">
-                <div class="thumbnail" style="background-image: url(img/welcome_2.jpg);">
-                    <div class="thumbnail-hover text-center">
-                        <div>
-                            Super texte pour décrire cette image
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- SECTION A PROPOS -->
+<section id="s_apropos" class="primary clearfix screensized">
+    <h3 class="text-center">
+        ---------- A PROPOS DE NOUS ----------
+    </h3>
+    </br>
+    </br>
 
-        <div class="center-row">
-            <div class="col-xs-6">
-                <div class="thumbnail" style="background-image: url(img/welcome_2.jpg);">
-                    <div class="thumbnail-hover text-center">
-                        <div>
-                            Super texte pour décrire cette image
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-6">
-                <div class="thumbnail" style="background-image: url(img/welcome_2.jpg);">
-                    <div class="thumbnail-hover text-center">
-                        <div>
-                            Super texte pour décrire cette image
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="row article" style="max-width:70%; margin:auto;">
+        <h1>
+            Notre histoire...
+        </h1>
+        <p>Ce concept est né lors de nombreux voyages aux Etats-Unis de la part des 2 gérants. Beaucoup de concepts traversent l'Atlantique mais celui de la restauration mexicaine n’avait pas encore atteint la Belgique. L'idée a donc pris forme et c'est au bout de plusieurs mois de travail et d'adaptation du concept aux modes de consommation européens qu'est né le premier fastfood mexicain sain de Belgique. L'adaptation a été faite au niveau du restaurant en lui-même en créant une ambiance chaleureuse. Mais aussi et surtout au niveau des recettes qui ont été retravaillée par des chefs étoilés afin que la nourriture mexicaine soit plus appréciable (bien que déjà délicieuse) par le palais européen.</p>
+    </div>
+</br>
+    <div class="row article" style="max-width:70%; margin:auto;">
+        <h1>
+            Concept...
+        </h1>
+        <p>Nous tenons à rompre avec les idées reçues sur les fastfoods. De la restauration rapide n'est pas forcément de la "malbouffe"... Une fois des ingrédients de qualité sélectionnés et une fois ceux-ci bien préparés (rapidité ne veut pas dire mal préparé), le résultat est délicieux et bon pour la santé.</p>
     </div>
 </section>
 
 <!-- SECTION HORAIRES -->
-<section id="s_horaires" class="primary clearfix screensized">
+<section id="s_infos" class="primary clearfix screensized">
 	<h3 class="text-center">
-		---------- HORAIRES ----------
+		---------- INFORMATIONS PRATIQUES ----------
 	</h3>
 	</br>
 	</br>
-    <div class="text-center">
+
+    <div class="row" style="max-width:70%;margin:auto;">
+      <div class="col-md-8">
+        <div name="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.7783035836196!2d4.612553366263786!3d50.66837664093974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c17e768c8e0b83%3A0xc89904dcb57f6827!2sMex%26Go!5e0!3m2!1sfr!2sfr!4v1450910497010" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-4">
         <div class="horaire_days">
             <b>lundi-jeudi</b> : 11h30h-22h<br/>
             <b>vendredi</b> : 11h30-22h<br/>
@@ -309,16 +324,8 @@
         <div name="phone">
             <b>Téléphone</b> :  010/45.10.10
         </div>
-        <div name="address">
-            <b>Addresse</b> : Rue du Sablon 52, 1348 Ottignies-Louvain-la-Neuve
-        </div>
-		<h1 class="text-center">
-			Comment nous trouver ?
-		</h1>
-		<div name="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.7783035836196!2d4.612553366263786!3d50.66837664093974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c17e768c8e0b83%3A0xc89904dcb57f6827!2sMex%26Go!5e0!3m2!1sfr!2sfr!4v1450910497010" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
-	</div>
+      </div>
+    </div>
 </section>
 
 <!-- BOTTOM -->
