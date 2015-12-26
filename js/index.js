@@ -6,18 +6,6 @@ $(document).keypress(function(e) {
     } 
 });
 
-function reset_desc(){
-	document.getElementById('desc-1').style.display = "none";
-	document.getElementById('desc-2').style.display = "none";
-	document.getElementById('desc-3').style.display = "none";
-	document.getElementById('desc-4').style.display = "none";
-	document.getElementById('desc-5').style.display = "none";
-	document.getElementById('desc-6').style.display = "none";
-	document.getElementById('desc-7').style.display = "none";
-	document.getElementById('desc-8').style.display = "none";
-	document.getElementById('desc-9').style.display = "none";
-}
-
 $(function() {
 
 	// Menu highlighting
@@ -52,10 +40,13 @@ $(function() {
 	
 	$('img.im_ingredient_small').hover(function(ev) {
 		var id = $(ev.currentTarget).data('id');
+		
 		var $bigImage = $('img.im_ingredient_big');
-		$bigImage.attr('src', 'https://u.jimdo.com/www400/o/saabf8fbe39843684/userlayout/img/ingr-' + id + '.jpg');
-		reset_desc();
-		var description = document.getElementById('desc-'+id).style.display = "";
+		$bigImage.attr('src', ev.currentTarget.src);
+
+		$('.ingr_description').hide();
+		$('#desc-' + id).show();
+		// var description = document.getElementById('desc-'+id).style.display = "";
 			
 	});
 

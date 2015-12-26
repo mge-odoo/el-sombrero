@@ -38,6 +38,7 @@ section:nth-child(odd) {
 section:nth-child(even) {
     background-image: url("../img/melamine-wood-004.png");
     background-repeat: repeat;
+    color: white;
 }
 /*  Navigation
 ----------------------------------------------- */
@@ -117,6 +118,10 @@ section:nth-child(even) {
 .im_ingredient_small {
 	height: 100px;
 	width: 100px;
+}
+
+.ingr_description {
+    display: none;
 }
 
 .ingredient-bottom-right {
