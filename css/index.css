@@ -20,7 +20,8 @@ html, body {
 -------------------------*/
 
 section.primary {
-	padding-top : 81px;
+	/*padding-top : 81px;*/
+    padding-top: 10px;
 }
 
 section.screensized {
@@ -39,6 +40,16 @@ section:nth-child(even) {
     background-image: url("../img/melamine-wood-004.png");
     background-repeat: repeat;
 }
+
+.h3-odd {
+    color: #f7d19a;
+}
+
+.h3-even {
+    color: #83502a;
+}
+
+
 /*  Navigation
 ----------------------------------------------- */
 
