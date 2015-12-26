@@ -1,4 +1,4 @@
-/* Test lamy
+ Test lamy
 
 /*  Typo
 ----------------------------------------------- */
@@ -31,12 +31,12 @@ section.screensized {
 }
 
 section:nth-child(odd) {
-    background-image: url("../img/melamine-wood-001.png");
+    background-image: url("../img/melamine-wood-003.png");
     background-repeat: repeat;
 }
 
 section:nth-child(even) {
-    background-image: url("../img/melamine-wood-004.png");
+    background-image: url("../img/melamine-wood-005.png");
     background-repeat: repeat;
     color: white;
 }
@@ -207,6 +207,7 @@ section:nth-child(even) {
     color: #be1522;
 }
 
+
 /* Caption Style */
 .cs-style-3 figure {
     overflow: hidden;
@@ -276,19 +277,11 @@ section:nth-child(even) {
 
 /* a propos
 **************************/
-#s_apropos .article{
-    background: white;
-    border-radius: 15px;
-    -webkit-border-radius:15px;
-}
-#s_apropos .article h1{
-    margin:0;
-    background: #111;
-    color:white;
-    padding:10px;
-}
-#s_apropos .article p{
-    padding:10px
+#s_apropos .panel {
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    color: black;
 }
 
 /* infos
@@ -378,4 +371,3 @@ section:nth-child(even) {
     height:30px;
     padding:35px 15px 0 90px;
 }
-*/
