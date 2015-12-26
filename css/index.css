@@ -355,6 +355,12 @@ section.screensized {
     width: 30px;
 }
 
+@media (max-width: 768px) {
+    #s_bottom #CDSSCROLLINGRAVE {
+        width: 100%;
+    }
+}
+
 /* JIMDO Layout
 ----------------------------------------------- */
 /*
