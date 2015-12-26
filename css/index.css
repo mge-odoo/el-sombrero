@@ -31,11 +31,13 @@ section.screensized {
 }
 
 section:nth-child(odd) {
-    background: gray;
+    background-image: url("../img/melamine-wood-001.png");
+    background-repeat: repeat;
 }
 
 section:nth-child(even) {
-    background: lightgray;
+    background-image: url("../img/melamine-wood-004.png");
+    background-repeat: repeat;
 }
 /*  Navigation
 ----------------------------------------------- */
