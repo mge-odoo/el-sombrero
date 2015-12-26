@@ -37,6 +37,9 @@ $(function() {
 	$('.carousel').carousel({
 	  interval: 5000
 	});
+
+
+	$('.ingr_description').first().show();
 	
 	$('img.im_ingredient_small').hover(function(ev) {
 		var id = $(ev.currentTarget).data('id');
@@ -77,7 +80,7 @@ function ungray_out_background(td) {
 	document.getElementById(td.id).style.backgroundColor = "";
 }
 function gray_out_background(td) {
-	document.getElementById(td.id).style.backgroundColor = "#111";
+	document.getElementById(td.id).style.backgroundColor = "#bbb";
 }
 function highlight_menu(a) {
 	$('.navigation a').removeClass('highlight');
