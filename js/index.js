@@ -10,7 +10,7 @@ $(function() {
 
 	// Menu highlighting
 	var menu = $('#s_menu').offset().top;
-	var nourriture_saine = $('#s_n_saine').offset().top;
+	var nourriture_saine = $('#s_visite_guidee').offset().top;
 	var apropos = $('#s_apropos').offset().top;
 	var infos = $('#s_infos').offset().top;
 	var nav_offset = 120;

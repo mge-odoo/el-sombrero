@@ -18,6 +18,32 @@
         <script src="js/modernizr.custom.js"></script>
         <link rel="stylesheet" href="css/index.css">
 
+        <script type="text/javascript">
+        function readDeviceOrientation() {
+            // window.innerHeight is not supported by IE
+            var winH = window.innerHeight ? window.innerHeight : jQuery(window).height();
+            var winW = window.innerWidth ? window.innerWidth : jQuery(window).width();
+            //force height for iframe usage
+            if(!winH || winH === 0){
+                winH = '100%';
+            }
+            // set the height of the document
+            jQuery('html').css('height', winH);
+            // scroll to top
+            window.scrollTo(0,0);
+        }
+        jQuery( document ).ready(function( jQuery ) {
+            if (/(iphone|ipod|ipad|android|iemobile|webos|fennec|blackberry|kindle|series60|playbook|opera\smini|opera\smobi|opera\stablet|symbianos|palmsource|palmos|blazer|windows\sce|windows\sphone|wp7|bolt|doris|dorothy|gobrowser|iris|maemo|minimo|netfront|semc-browser|skyfire|teashark|teleca|uzardweb|avantgo|docomo|kddi|ddipocket|polaris|eudoraweb|opwv|plink|plucker|pie|xiino|benq|playbook|bb|cricket|dell|bb10|nintendo|up.browser|playstation|tear|mib|obigo|midp|mobile|tablet)/.test(navigator.userAgent.toLowerCase())) {
+                // add event listener on resize event (for orientation change)
+                jQuery(window).resize(function() {
+                    readDeviceOrientation();
+                });
+                // initial execution
+                readDeviceOrientation();
+            }
+        });
+        </script>
+
 
 		<link rel="icon" type="image/png" href="favicon.ico" />
         <title>Mex & Go Local</title>
@@ -45,7 +71,7 @@
         </li>
 
         <li>
-            <a href="#s_n_saine" onclick="$('#s_n_saine').animatescroll();">Nourriture Saine</a>
+            <a href="#s_visite_guidee" onclick="$('#s_visite_guidee').animatescroll();">Visite guidée</a>
         </li>
 
         <li>
@@ -103,10 +129,6 @@
             <li data-target="#carousel-welcome" data-slide-to="1">
                 <!---->
             </li>
-
-            <li data-target="#carousel-welcome" data-slide-to="2">
-                <!---->
-            </li>
         </ol>
         <!-- Wrapper for slides -->
 
@@ -119,12 +141,6 @@
 
             <div class="item">
                 <img src="img/pano-exterieur-small-final-meta.jpg" alt="" />
-                <div class="carousel-caption">
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="img/pano-buffet-small-final-meta.jpg" alt="" />
                 <div class="carousel-caption">
                 </div>
             </div>
@@ -306,10 +322,57 @@
 	</div>
 </section>
 
-<!-- SECTION NOURRITURE SAINE -->
-<section id="s_n_saine" class="primary clearfix screensized">
-    <!-- IMAGES 2X2 GRID -->
 
+<!-- SECTION VISITE GUIDEE -->
+<section id="s_visite_guidee" class="primary clearfix screensized">
+    <h2 class="text-center">
+        Visite guidée
+    </h2>
+    <div class="hr">&nbsp;</div>
+    <div class="clearfix"/>
+    </br>
+    </br>
+    <div id="container">
+        <div id="tourDIV">
+            <div id="panoDIV">
+                <noscript>
+
+                    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%" height="100%" id="indexdata/index">
+                        <param name="movie" value="indexdata/index.swf"/>
+                        <param name="allowFullScreen" value="true"/>
+                        <!--[if !IE]>-->
+                        <object type="application/x-shockwave-flash" data="indexdata/index.swf" width="100%" height="100%">
+                            <param name="movie" value="indexdata/index.swf"/>
+                            <param name="allowFullScreen" value="true"/>
+                            <!--<![endif]-->
+                            <a href="http://www.adobe.com/go/getflash">
+                                <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player"/>
+                            </a>
+                        <!--[if !IE]>-->
+                        </object>
+                        <!--<![endif]-->
+                    </object>
+
+                </noscript>
+            </div>
+
+            <script type="text/javascript" src="indexdata/index.js"></script>
+            <script type="text/javascript">
+                embedpano({
+                    swf:"indexdata/index.swf",
+                    target:"panoDIV",
+                    passQueryParameters:true
+                });
+            </script>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- SECTION NOURRITURE SAINE -->
+<!--
+<section id="s_n_saine" class="primary clearfix screensized">
     <h2 class="text-center">
         Nourriture saine
     </h2>
