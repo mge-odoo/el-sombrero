@@ -55,11 +55,6 @@
 
 <div class="navigation">
     <ul id="nav">
-        <!-- <li>
-            <a href="#welcome" class="highlight smoothScroll">Home</a>
-        </li> -->
-
-
         <li>
             <a href="index.html">
                 <img width="50px" src="img/logo.jpeg"/>
@@ -72,6 +67,10 @@
 
         <li>
             <a href="#s_visite_guidee" onclick="$('#s_visite_guidee').animatescroll();">Visite guidée</a>
+        </li>
+
+        <li>
+            <a href="#s_n_saine" onclick="$('#s_n_saine').animatescroll();">Nourriture Saine</a>
         </li>
 
         <li>
@@ -154,12 +153,11 @@
 
 <!-- SECTION MENU -->
 <section id="s_menu" class="primary clearfix screensized">
-    	<h2 class="text-center">
-    		Menu
-    	</h2>
-        <div class="hr">&nbsp;</div>
-        <div class="clearfix"/>
-    </div>
+	<h2 class="text-center">
+		Menu
+	</h2>
+    <div class="hr">&nbsp;</div>
+    <div class="clearfix"/>
 	</br>
 	</br>
     <div class="image-container">
@@ -169,49 +167,61 @@
 					<table align="center">
 						<tr>
 							<td id="row-1-cell-1" class="ingredient-grid ingredient-bottom-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
-								<img src="img/boeuf.png" data-id="1" class="im_ingredient_small" alt="" />
+								<img id="test1" src="img/boeuf.png" data-id="1" class="im_ingredient_small" alt=""/>
 							</td>
 							<td id="row-1-cell-2" class="ingredient-grid ingredient-bottom-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
 								<img src="img/porc.png" data-id="2" class="im_ingredient_small" alt="" />
 							</td>
-							<td id="row-1-cell-3" class="ingredient-grid ingredient-bottom" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
-								<img src="img/quorn.png" data-id="3" class="im_ingredient_small" alt="" />
-							</td>
+                            <td id="row-1-cell-3" class="ingredient-grid ingredient-bottom-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
+                                <img src="img/quorn.png" data-id="3" class="im_ingredient_small" alt="" />
+                            </td>
+                            <td id="row-1-cell-4" class="ingredient-grid ingredient-bottom" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
+                                <img src="img/poulet.png" data-id="4" class="im_ingredient_small" alt="" />
+                            </td>
 						</tr>
 
 						<tr>
 							<td id="row-2-cell-1" class="ingredient-grid ingredient-bottom-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
-								<img src="img/riz-blanc.png" data-id="4" class="im_ingredient_small" alt="" />
+								<img src="img/riz-blanc.png" data-id="5" class="im_ingredient_small" alt="" />
 							</td>
 							<td id="row-2-cell-2" class="ingredient-grid ingredient-bottom-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
-								<img src="img/riz-brun.png" data-id="5" class="im_ingredient_small" alt="" />
+								<img src="img/riz-brun.png" data-id="6" class="im_ingredient_small" alt="" />
 							</td>
-							<td id="row-2-cell-3" class="ingredient-grid ingredient-bottom" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
-								<img src="img/mais.png" data-id="6" class="im_ingredient_small" alt="" />
-							</td>
+                            <td id="row-2-cell-3" class="ingredient-grid ingredient-bottom-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
+                                <img src="img/beans-rouges.png" data-id="7" class="im_ingredient_small" alt="" />
+                            </td>
+                            <td id="row-2-cell-4" class="ingredient-grid ingredient-bottom" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
+                                <img src="img/beans-blancs.png" data-id="8" class="im_ingredient_small" alt="" />
+                            </td>
 						</tr>
 
 						<tr>
 							<td id="row-3-cell-1" class="ingredient-grid ingredient-bottom-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
-								<img src="img/cheddar.png" data-id="7" class="im_ingredient_small" alt="" />
+								<img src="img/cheddar.png" data-id="9" class="im_ingredient_small" alt="" />
 							</td>
-							<td id="row-3-cell-2" class="ingredient-grid ingredient-bottom-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
-								<img src="img/emental.png" data-id="8" class="im_ingredient_small" alt="" />
-							</td>
-							<td id="row-3-cell-3" class="ingredient-grid ingredient-bottom" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
-								<img src="img/creme-fraiche.png" data-id="9" class="im_ingredient_small" alt="" />
+                            <td id="row-3-cell-2" class="ingredient-grid ingredient-bottom-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
+                                <img src="img/emental.png" data-id="10" class="im_ingredient_small" alt="" />
+                            </td>
+                            <td id="row-3-cell-3" class="ingredient-grid ingredient-bottom-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
+                                <img src="img/pico.png" data-id="11" class="im_ingredient_small" alt="" />
+                            </td>
+							<td id="row-3-cell-4" class="ingredient-grid ingredient-bottom" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
+								<img src="img/mais.png" data-id="12" class="im_ingredient_small" alt="" />
 							</td>
 						</tr>
 
                         <tr>
                             <td id="row-4-cell-1" class="ingredient-grid ingredient-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
-                                <img src="img/beans-rouges.png" data-id="10" class="im_ingredient_small" alt="" />
+                                <img src="img/creme-fraiche-2.png" data-id="13" class="im_ingredient_small" alt="" />
                             </td>
                             <td id="row-4-cell-2" class="ingredient-grid ingredient-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
-                                <img src="img/beans-blancs.png" data-id="11" class="im_ingredient_small" alt="" />
+                                <img src="img/poivrons-2.png" data-id="14" class="im_ingredient_small" alt="" />
                             </td>
-                            <td id="row-4-cell-3" class="ingredient-grid" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
-                                <img src="img/avocats.png" data-id="12" class="im_ingredient_small" alt="" />
+                            <td id="row-4-cell-3" class="ingredient-grid ingredient-right" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
+                                <img src="img/salade.png" data-id="15" class="im_ingredient_small" alt="" />
+                            </td>
+                            <td id="row-4-cell-4" class="ingredient-grid" onmouseout="javascript:ungray_out_background(this);" onmouseover="javascript:gray_out_background(this);">
+                                <img src="img/guacamole.png" data-id="16" class="im_ingredient_small" alt="" />
                             </td>
                         </tr>
 					</table>
@@ -237,15 +247,23 @@
                         Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
                     </p>
 				</div>
-				<div id="desc-3" class="ingr_description">
-					<p>
+                <div id="desc-3" class="ingr_description">
+                    <p>
                         <b>Quorn</b>
                     </p>
                     <p>
                         Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
                     </p>
-				</div>
-				<div id="desc-4" class="ingr_description">
+                </div>
+                <div id="desc-4" class="ingr_description">
+                    <p>
+                        <b>Poulet</b>
+                    </p>
+                    <p>
+                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
+                    </p>
+                </div>
+				<div id="desc-5" class="ingr_description">
 					<p>
                         <b>Riz blanc</b>
                     </p>
@@ -253,7 +271,7 @@
                         Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
                     </p>
 				</div>
-				<div id="desc-5" class="ingr_description">
+				<div id="desc-6" class="ingr_description">
 					<p>
                         <b>Riz brun</b>
                     </p>
@@ -261,39 +279,7 @@
                         Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
                     </p>
 				</div>
-				<div id="desc-6" class="ingr_description">
-					<p>
-                        <b>Maïs</b>
-                    </p>
-                    <p>
-                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
-                    </p>
-				</div>
-				<div id="desc-7" class="ingr_description">
-					<p>
-                        <b>Cheddar</b>
-                    </p>
-                    <p>
-                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
-                    </p>
-				</div>
-				<div id="desc-8" class="ingr_description">
-					<p>
-                        <b>Emmental</b>
-                    </p>
-                    <p>
-                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
-                    </p>
-				</div>
-				<div id="desc-9" class="ingr_description">
-					<p>
-                        <b>Crème fraiche</b>
-                    </p>
-                    <p>
-                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
-                    </p>
-				</div>
-                <div id="desc-10" class="ingr_description">
+                <div id="desc-7" class="ingr_description">
                     <p>
                         <b>Beans rouges</b>
                     </p>
@@ -301,7 +287,7 @@
                         Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
                     </p>
                 </div>
-                <div id="desc-11" class="ingr_description">
+                <div id="desc-8" class="ingr_description">
                     <p>
                         <b>Beans blancs</b>
                     </p>
@@ -309,9 +295,65 @@
                         Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
                     </p>
                 </div>
-                <div id="desc-12" class="ingr_description">
+                <div id="desc-9" class="ingr_description">
                     <p>
-                        <b>Avocat</b>
+                        <b>Cheddar</b>
+                    </p>
+                    <p>
+                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
+                    </p>
+                </div>
+                <div id="desc-10" class="ingr_description">
+                    <p>
+                        <b>Emmental</b>
+                    </p>
+                    <p>
+                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
+                    </p>
+                </div>
+                <div id="desc-11" class="ingr_description">
+                    <p>
+                        <b>Pico de Gallo</b>
+                    </p>
+                    <p>
+                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
+                    </p>
+                </div>
+				<div id="desc-12" class="ingr_description">
+					<p>
+                        <b>Maïs</b>
+                    </p>
+                    <p>
+                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
+                    </p>
+				</div>
+				<div id="desc-13" class="ingr_description">
+					<p>
+                        <b>Crème épaisse / Fromage frais</b>
+                    </p>
+                    <p>
+                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
+                    </p>
+				</div>
+                <div id="desc-14" class="ingr_description">
+                    <p>
+                        <b>Poivrons</b>
+                    </p>
+                    <p>
+                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
+                    </p>
+                </div>
+                <div id="desc-15" class="ingr_description">
+                    <p>
+                        <b>Salade</b>
+                    </p>
+                    <p>
+                        Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
+                    </p>
+                </div>
+                <div id="desc-16" class="ingr_description">
+                    <p>
+                        <b>Guacamole</b>
                     </p>
                     <p>
                         Un bœuf est un taureau castré, plus précisément un bovin (Bos taurus) domestique mâle ayant subi une castration dans le cadre de son élevage. Devenus plus calmes, ces animaux sont principalement destinés à la production d'animaux robustes destinés à la traction bovine ou à production de viande bovine.
@@ -324,6 +366,7 @@
 
 
 <!-- SECTION VISITE GUIDEE -->
+
 <section id="s_visite_guidee" class="primary clearfix screensized">
     <h2 class="text-center">
         Visite guidée
@@ -341,16 +384,20 @@
                         <param name="movie" value="indexdata/index.swf"/>
                         <param name="allowFullScreen" value="true"/>
                         <!--[if !IE]>-->
+                        <!--
                         <object type="application/x-shockwave-flash" data="indexdata/index.swf" width="100%" height="100%">
                             <param name="movie" value="indexdata/index.swf"/>
                             <param name="allowFullScreen" value="true"/>
                             <!--<![endif]-->
+                            <!--
                             <a href="http://www.adobe.com/go/getflash">
                                 <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player"/>
                             </a>
                         <!--[if !IE]>-->
+                        <!--
                         </object>
                         <!--<![endif]-->
+                        <!--
                     </object>
 
                 </noscript>
@@ -371,7 +418,6 @@
 
 
 <!-- SECTION NOURRITURE SAINE -->
-<!--
 <section id="s_n_saine" class="primary clearfix screensized">
     <h2 class="text-center">
         Nourriture saine
@@ -383,46 +429,46 @@
     <ul class="grid cs-style-3">
         <li>
             <figure>
-                <img src="img/welcome_2.jpg" alt="img04">
+                <img src="img/welcome-2.jpg" alt="img1">
                 <figcaption>
                     <h3>Title</h3>
                     <span>Short description</span>
-                    <a href="#">More info</a>
+                    <!-- <a href="#">More info</a> -->
                 </figcaption>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="img/welcome_2.jpg" alt="img01">
+                <img src="img/welcome-2.jpg" alt="img2">
                 <figcaption>
                     <h3>Title</h3>
                     <span>Short description</span>
-                    <a href="#">More info</a>
+                    <!-- <a href="#">More info</a> -->
                 </figcaption>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="img/welcome_2.jpg" alt="img02">
+                <img src="img/welcome-2.jpg" alt="img3">
                 <figcaption>
                     <h3>Title</h3>
                     <span>Short description</span>
-                    <a href="#">More info</a>
+                    <!-- <a href="#">More info</a> -->
                 </figcaption>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="img/welcome_2.jpg" alt="img05">
+                <img src="img/welcome-2.jpg" alt="img4">
                 <figcaption>
                     <h3>Title</h3>
                     <span>Short description</span>
-                    <a href="#">More info</a>
+                    <!-- <a href="#">More info</a> -->
                 </figcaption>
             </figure>
         </li>
     </ul>
-    <script src="js/toucheffects.js"></script>
+    <script type="text/javascript" src="js/toucheffects.js"></script>
 </section>
 
 <!-- SECTION A PROPOS -->
@@ -465,6 +511,36 @@
     <br/>
     <div class="container">
         <div class="row">
+            <div class="col-md-4 text-center">
+                <figure>
+                    <img width="40px" src="img/mail-icon.png" alt="mail">
+                    <figcaption>
+                        info@mexngo.com
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 text-center">
+                <figure>
+                    <img width="40px" src="img/pin-icon.png"alt="pin">
+                    <figcaption>
+                        Rue du Sablon 52, 1348 Ottignies-Louvain-la-Neuve, Belgique
+                    </figcaption>
+                </figure>
+
+            </div>
+            <div class="col-md-4 text-center social_media">
+                <figure>
+                    <img width="40px" src="img/phone-icon.png" alt="phone">
+                    <figcaption>
+                        010/45.10.10
+                    </figcaption>
+                </figure>
+
+            </div>
+        </div>
+    </br>
+</br>
+        <div class="row">
           <div class="col-md-6">
             <div class="google_map" name="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.7783035836196!2d4.612553366263786!3d50.66837664093974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c17e768c8e0b83%3A0xc89904dcb57f6827!2sMex%26Go!5e0!3m2!1sfr!2sfr!4v1450910497010"frameborder="0" allowfullscreen></iframe>
@@ -479,35 +555,6 @@
                 <b>dimanche</b> : 18h30-22h<br/>
             </div>
             <br/>
-
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <figure>
-                        <img width="40px" src="img/mail-icon.png" alt="mail">
-                        <figcaption>
-                            info@mexngo.com
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4 text-center">
-                    <figure>
-                        <img width="40px" src="img/pin-icon.png"alt="pin">
-                        <figcaption>
-                            Rue du Sablon 52, 1348 Ottignies-Louvain-la-Neuve, Belgique
-                        </figcaption>
-                    </figure>
-
-                </div>
-                <div class="col-md-4 text-center social_media">
-                    <figure>
-                        <img width="40px" src="img/phone-icon.png" alt="phone">
-                        <figcaption>
-                            010/45.10.10
-                        </figcaption>
-                    </figure>
-
-                </div>
-            </div>
           </div>
         </div>
     </div>
